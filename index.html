@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Pigment Cell Biology Lab</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Pigment Cell Biology Lab</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Lab Members.html">Lab Members</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<body onload = "onload();">
+					<div class="inner">
+						<a href="About Us.html">
+						<h1>Pigment Cell Biology Lab</h1>
+						<p>A Cell Biology Lab with a primary focus on<br>
+						Melanocyte Development and Function.</p></a>
+					</div>
+					<video id = "my_video" autoplay muted playsinline onended = "onVideoEnded();"> </video>
+					<script>
+						var video_list = ["images/Banner.mp4"];
+						var video_index = 0;
+						var video_player = null;
+						function onload(){
+									  console.log("body loaded");
+									  video_player = document.getElementById("my_video");
+									  video_player.setAttribute("src", video_list[video_index]);
+									  video_player.play();
+						}
+						
+						function onVideoEnded(){
+									  console.log("video ended");
+											if(video_index < video_list.length - 1){
+											video_index++;
+									   }
+									   else{
+									   video_index = 0;
+									}
+						video_player.setAttribute("src", video_list[video_index]);
+						video_player.play();
+						}
+					</script>
+				</body>	
+			</section>
+
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					
+					<header>
+						<h2><strong>Principal Investigator</strong></h2>
+					</header>
+						<img src="images/Vivek.jpg" width="200" height="200" style= "float: top; margin-bottom: 10px">
+						<h3><strong>Vivek T Natarajan</strong></h3></a>
+						
+                    <hr />
+					
+					<header>
+						<h2><strong>Research Theme</strong></h2>
+					</header>
+					<h3><strong>Deciphering cell fate transitions in melanocyte lineage</strong></h3><br/>
+					<p>Pigment producing cells of the human skin offer a tantalizing opportunity to 
+					decipher molecular determinants of cell fate transitions. The continuum of melanocyte 
+					fate from its derivation from neural crest, to its response to ultraviolet radiations and 
+					their loss in depigmenting disorders are of interest to my laboratory. Visual tracking 
+					of melanin makes this an excellent model system to study molecular orchestration 
+					events in both cells as well as model organisms.</p>
+					<center><img src="images/image1.png" width="731" height="429" style= "float: centre; margin-bottom: 10px" align = "middle"></center>
+					<p>Derived from neural crest lineage, progressive fate-restriction and stem cell assignment 
+					are critical for development, differentiation and regeneration of melanocytes. While the 
+					fate-commitment events have distinct transcriptional footprints, fate-biasing is often transitory 
+					and metastable, and hence is difficult to establish. We employ CRISPR-Cas9 based targeted 
+					mutagenesis of candidate genes in zebrafish to study the molecular mechanisms behind 
+					these melanocyte fate transitions. This is complemented by experiments with cells to traverse 
+					the molecules-to-cells-to organism connect, which also serves as a validation. </p>
+							
+				</div>
+			</section>
+			
+			
+
+		<!-- CTA -->
+			<section id="cta" class="wrapper">
+				<div class="inner">
+					
+				</div>
+			</section>
+
+		<!-- Publications -->
+			<section class="wrapper">
+				<div class="inner">
+					<header class="special">
+						<h2>Selected Publications</h2>
+					</header>
+					
+					<p><a href = "https://www.ncbi.nlm.nih.gov/pubmed/31709752" target = "blank" style="text-decoration: none">
+					Raja, D.A., Gotherwal, V., Burse, S.A., Subramaniam, Y.J., Sultan, F., Vats, A., Gautam, H., Sharma, B., Sharma, S., Singh, A., Sivasubbu, S., 
+					Gokhale, R.S., <strong>Natarajan, V.T.</strong>, 2020. pH‐controlled histone acetylation amplifies melanocyte differentiation downstream of MITF. EMBO Rep. 21.</a></p>
+					<p><a href = "https://www.ncbi.nlm.nih.gov/pubmed/31081026" target = "blank" style="text-decoration: none">
+					Grover, R., Burse, S.A., Shankrit, S., Aggarwal, A., Kirty, K., Narta, K., Srivastav, R., Ray, A.K., Malik, G., Vats, A., 
+					Motiani, R.K., Thukral, L., Roy, S.S., Bhattacharya, S., Sharma, R., Natarajan, K., Mukerji, M., Pandey, R., Gokhale, R.S., <strong>Natarajan, V.T.</strong>, 2019. 
+					Myg1 exonuclease couples the nuclear and mitochondrial translational programs through RNA processing. Nucleic Acids Res. 47, 5852–5866.</a></p>
+					<p><a href = "https://www.ncbi.nlm.nih.gov/pubmed/28598240" target = "blank" style="text-decoration: none">
+					Ramkumar, A., Murthy, D., Raja, D.A., Singh, A., Krishnan, A., Khanna, S., Vats, A., Thukral, L., Sharma, P., Sivasubbu, S., Rani, R., <strong>Natarajan, V.T.</strong>, Gokhale, R.S., 2017. 
+					Classical autophagy proteins LC3B and ATG4B facilitate melanosome movement on cytoskeletal tracks. Autophagy 13, 1331–1347.</a></p>
+					<p><a href = "https://www.ncbi.nlm.nih.gov/pubmed/24937072" target = "blank" style="text-decoration: none">
+					<strong>Natarajan, V.T.</strong>, Ganju, P., Ramkumar, A., Grover, R., Gokhale, R.S., 2014a. 
+					Multifaceted pathways protect human skin from UV radiation. Nat. Chem. Biol. 10, 542–551. </a></p>
+					<p><a href = "https://www.ncbi.nlm.nih.gov/pubmed/24474804" target = "blank" style="text-decoration: none">
+					<strong>Natarajan, V.T.</strong>, Ganju, P., Singh, A., Vijayan, V., Kirty, K., Yadav, S., Puntambekar, S., Bajaj, S., Dani, P.P., Kar, H.K., Gadgil, C.J., Natarajan, K., Rani, R., Gokhale, R.S., 2014b. 
+					IFN-γ signaling maintains skin pigmentation homeostasis through regulation of melanosome maturation. Proc. Natl. Acad. Sci. U. S. A. 111, 2301–2306.</a></p>
+					<p><a href = "https://www.ncbi.nlm.nih.gov/pubmed/?term=%22Vivek+T+Natarajan%22" target = "blank" style="text-decoration: none">
+					More... </a></p>
+					
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Contact</h3>
+							 <p>Lab - 218<br/>
+								  CSIR-Institute of Genomics & Integrative Biology<br/>
+								  South Campus, Mathura Road,<br/>
+								  Opp: Sukhdev Vihar Bus Depot<br/>
+								  New Delhi 110025<br/>
+								  India</p>
+						</section>
+						<section>
+							<h4>Useful Links</h4>
+							<ul class="alt">
+								<li><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54359" target = "blank" style="color:#FF0000;">B16 Pigmentation Oscillator</a></li>
+								<li><a href="https://www.igib.res.in/" target = "blank" style="color:#FF0000;">CSIR-IGIB</a></li>
+								<li><a href="https://www.vitivar.igib.res.in/" target = "blank" style="color:#FF0000;">VitiVar</a></li>
+								<li><a href="https://eskin.persistent.co.in/" target = "blank" style="color:#FF0000;">e-Skin</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Opportunities</h4>
+							<p> Please visit the official website of <a href="https://www.igib.res.in/" target = "blank" style="color:#FF0000;">CSIR-IGIB</a>
+							for PhD, Project Fellow and Training opportunities. <br/>
+							Write to us at <a href="mailto:tnvivek@igib.in" style="color:#FF0000;">tnvivek@igib.in</a> if you are interested in joining our lab.</p>
+						</section>
+					</div>
+					<div class="copyright">
+						Designed by Pigment Cell Biology Lab. <br>
+						           @ CSIR-IGIB.<br>
+						Built on the template taken from <a href="https://templated.co/" target ="blank" style="color:#FF0000;">TEMPLATED</a>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

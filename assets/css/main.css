@@ -2209,7 +2209,7 @@ ul.icons {
 #footer {
   background-color: #111111;
   color: rgba(255, 255, 255, 0.5);
-  padding: 8rem 0 6rem 0 ; }
+  padding: 6rem 0 6rem 0 ; }
   #footer input, #footer select, #footer textarea {
     color: #ffffff; }
   #footer a {
@@ -2351,12 +2351,13 @@ ul.icons {
     display: -ms-flex;
     display: flex; }
     #footer .content section {
-      width: 25%; }
+      width: 20%; }
       #footer .content section:first-child {
-        width: 50%;
-        padding-right: 4rem; }
+        width: 100%;
+        padding-left: 10rem; }
       #footer .content section:last-child {
-        padding-left: 4rem; }
+		  width: 50%;
+        padding-right: 10rem; }
   #footer .copyright {
     border-top: 1px solid;
     font-size: 0.8rem;

@@ -2353,10 +2353,10 @@ ul.icons {
     #footer .content section {
       width: 25%; }
       #footer .content section:first-child {
-        width: 70%;
-        padding-left: 10rem; }
+        width: 50%;
+        padding-right: 4rem; }
       #footer .content section:last-child {  
-        padding-right: 10rem; }
+        padding-left: 4rem; }
   #footer .copyright {
     border-top: 1px solid;
     font-size: 0.8rem;

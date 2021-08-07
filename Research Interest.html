@@ -41,18 +41,41 @@
 
 		<!-- Two -->
 			<section id="two" class="wrapper style2">
+			<body onload = "onload();">
 				<div class="inner">
+					<video style="display:block; margin: 0 auto;" id = "my_video" autoplay muted playsinline onended = "onVideoEnded();"> </video>
+						<script>
+							var video_list = ["images/Presentation1.mp4"];
+							var video_index = 0;
+							var video_player = null;
+							function onload(){
+										  console.log("body loaded");
+										  video_player = document.getElementById("my_video");
+										  video_player.setAttribute("src", video_list[video_index]);
+										  video_player.play();
+									}
+									
+							function onVideoEnded(){
+										  console.log("video ended");
+												if(video_index < video_list.length - 1){
+												video_index++;
+										   }
+										   else{
+										   video_index = 0;
+										}
+							video_player.setAttribute("src", video_list[video_index]);
+							video_player.play();
+							}
+						</script>
 					<div class="box">
 						<div class="content">
-							<p>I'm a PhD student in Biological Sciences working with 
-					<a href="https://www.igib.res.in/?q=VivekT.Natarajan" target="blank" style="color:red">Dr Vivek T. Natarajan</a> at 
-					<a href="https://www.igib.res.in/" target="blank" style="color:red">CSIR - Institute of Genomics and Integrative Biology, Delhi, India.</a></br> 
-					I work in the field of skin pigmentation focusing on melanocyte biology. My current research project involves deciphering 
-					the mechanism and the biological significance behind melanocyte cell state/lineage transitions using a mix of informatics and experimental approaches. 
-					</p>
-							</div>
+							<p>	
+							Melanocytes are a fascinating cell type. They are highly dendritic pigment producing cells having a neural crest origin. 
+							</p>
+						</div>
 					</div>
 				</div>
+				</body>
 			</section>
 
 		<!-- Footer -->

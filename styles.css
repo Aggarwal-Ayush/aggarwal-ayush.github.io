@@ -4,3 +4,4 @@ a:hover { color: #922b21; }
 .profile { text-align: center; }
 .slide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
 .quarto-title h1.title { text-align: center; }
+#refs .csl-entry { padding-left: 0; text-indent: 0; margin-bottom: 0.75rem; }

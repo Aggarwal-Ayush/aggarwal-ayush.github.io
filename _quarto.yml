@@ -22,6 +22,8 @@ website:
         href: postdoctoral-research.qmd
       - text: "PhD Research"
         href: phd-research.qmd
+      - text: "Publications"
+        href: publications.qmd
       - text: "Resume"
         href: resume.qmd
     right:

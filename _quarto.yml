@@ -40,3 +40,8 @@ format:
     css: styles.css
     toc: false
     link-external-newwindow: true
+
+bibliography: publications.bib
+csl: apa-by-date.csl
+filters:
+  - bold-author.lua

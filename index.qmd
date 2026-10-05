@@ -1,5 +1,7 @@
 ---
 title: "Ayush Aggarwal"
+nocite: |
+  @*
 ---
 
 ::: profile
@@ -19,14 +21,8 @@ Want to see how your favourite gene behaves across multiple melanocyte developme
 
 ## Publications
 
-- Aggarwal, A., Nasreen, A., Sahoo, S., Faruq, M., Pandey, R., Jolly, M.K., Singh, A., Gokhale, R.S., Natarajan, V.T., **2023**. [Melanocytes Exhibit Distinct Cell States Governed by A Gene Regulatory Network Under Stochastic Influence.](https://doi.org/10.1101/2023.05.10.540111) (in communication)
-- Subramaniam, Y., Sharma, B., Aggarwal, A., Raja, D.A., Gupta, I., Ghazi, M., Sivasubbu, S. & Natarajan, V.T., **2023**. [Migration and establishment of progenitor pool of melanocytes is governed by SEMA3E-PLXND1 signaling.](https://doi.org/10.1101/2023.02.28.530560) (under review at JCS)
-- Sultan, F., Basu, R., Murthy, D., Kochar, M., Attri, K.S., Aggarwal A., Kumari, P., Dnyane, P., Tanwar J., Motiani R.K., Singh, A., Gadgil, C., Bhavesh, N.S., Singh, P.K., Natarajan, V.T., Gokhale, R.S., **2022**. [Temporal analysis of melanogenesis identifies fatty acid metabolism as key skin pigment regulator.](https://doi.org/10.1371/journal.pbio.3001634) *PLoS Biol*. 20(5): e3001634.
-- Sharma, B., Subramaniam, Y.J., Raja, D.A., Aggarwal A., Sivasubbu, S., Natarajan, V.T., **2022**. [Reverse Genetic Approach to Identify Regulators of Pigmentation using Zebrafish.](https://dx.doi.org/10.3791/62955) *JoVE J. Vis. Exp.* e62955.
-- Dhawan, U.K., Bhattacharya, P., Narayanan, S., Manickam, V., Aggarwal A., Subramanian, M., **2021**. [Hypercholesterolemia Impairs Clearance of Neutrophil Extracellular Traps and Promotes Inflammation and Atherosclerotic Plaque Progression.](https://doi.org/10.1161/ATVBAHA.120.316389) *Arteriosclerosis, Thrombosis, and Vascular Biology*. 41, 2598–2615.
-- Oh S, Abdelnabi J, Al-Dulaimi R, Aggarwal A, Ramos M, Davis S, Riester M, Waldron L, **2020**. [HGNChelper: identification and correction of invalid gene symbols for human and mouse](https://doi.org/10.12688/f1000research.28033.1) [version 1; peer review: 2 approved, 1 approved with reservations]. *F1000Research*. 9:1493.
-- Raja, D.A., Subramaniam, Y.J., Aggarwal, A., Gotherwal, V., Babu, A., Tanwar, J., Motiani, R.K., Sivasubbu, S., Gokhale, R.S., Natarajan, V.T., **2020**. [Histone variant dictates fate biasing of neural crest cells to melanocyte lineage.](https://dev.biologists.org/content/147/5/dev182576.long) *Development*.
-- Grover, R., Burse, S.A., Shankrit, S., Aggarwal, A., Kirty, K., Narta, K., Srivastav, R., Ray, A.K., Malik, G., Vats, A., Motiani, R.K., Thukral, L., Roy, S.S., Bhattacharya, S., Sharma, R., Natarajan, K., Mukerji, M., Pandey, R., Gokhale, R.S., Natarajan, V.T., **2019**. [Myg1 exonuclease couples the nuclear and mitochondrial translational programs through RNA processing.](https://www.ncbi.nlm.nih.gov/pubmed/31081026) *Nucleic Acids Res*. 47, 5852–5866.
+::: {#refs}
+:::
 
 ## Contact
 

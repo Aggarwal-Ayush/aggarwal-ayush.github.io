@@ -22,8 +22,8 @@ website:
         href: postdoctoral-research.qmd
       - text: "PhD Research"
         href: phd-research.qmd
-      - text: "CV"
-        href: cv.qmd
+      - text: "Resume"
+        href: resume.qmd
     right:
       - icon: envelope
         href: mailto:ayush.ucsf@gmail.com

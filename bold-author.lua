@@ -1,11 +1,10 @@
 -- Bold and underline the site owner's name ("Aggarwal, A.") in the reference list.
--- Must run after citeproc (see `filters` in _quarto.yml).
+-- Quarto runs user filters before citeproc, so run citeproc here first.
 local function is_space(el)
   return el.t == "Space" or (el.t == "Str" and el.text == "\u{a0}")
 end
 
-function Div(div)
-  if div.identifier ~= "refs" then return nil end
+local function highlight(div)
   return div:walk({
     Inlines = function(inlines)
       for i = 1, #inlines - 2 do
@@ -24,4 +23,18 @@ function Div(div)
       end
     end
   })
+end
+
+function Pandoc(doc)
+  doc = pandoc.utils.citeproc(doc)
+  doc = doc:walk({
+    Div = function(div)
+      if div.identifier == "refs" then return highlight(div) end
+    end
+  })
+  -- citeproc has run; stop pandoc from running it a second time
+  for _, k in ipairs({ "bibliography", "references", "nocite", "csl" }) do
+    doc.meta[k] = nil
+  end
+  return doc
 end

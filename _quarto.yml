@@ -44,5 +44,4 @@ format:
 bibliography: publications.bib
 csl: apa-by-date.csl
 filters:
-  - citeproc
   - bold-author.lua

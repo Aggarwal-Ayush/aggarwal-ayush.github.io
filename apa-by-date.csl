@@ -2249,7 +2249,7 @@
       </choose>
     </group>
   </macro>
-  <bibliography entry-spacing="0" et-al-min="21" et-al-use-first="19" et-al-use-last="true" hanging-indent="true" line-spacing="2">
+  <bibliography entry-spacing="0" et-al-min="21" et-al-use-first="19" et-al-use-last="true" hanging-indent="false" line-spacing="2">
     <sort>
       <key variable="issued" sort="descending"/>
       <key macro="author-sort"/>

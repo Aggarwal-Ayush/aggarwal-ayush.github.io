@@ -4,7 +4,23 @@ local function is_space(el)
   return el.t == "Space" or (el.t == "Str" and el.text == "\u{a0}")
 end
 
+-- First-author entries first; each group keeps the CSL's newest-first order.
+local function first_author_first(div)
+  local mine, others = {}, {}
+  for _, entry in ipairs(div.content) do
+    if pandoc.utils.stringify(entry):match("^Aggarwal,") then
+      mine[#mine + 1] = entry
+    else
+      others[#others + 1] = entry
+    end
+  end
+  for _, e in ipairs(others) do mine[#mine + 1] = e end
+  div.content = mine
+  return div
+end
+
 local function highlight(div)
+  div = first_author_first(div)
   return div:walk({
     Inlines = function(inlines)
       for i = 1, #inlines - 2 do

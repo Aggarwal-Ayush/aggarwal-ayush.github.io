@@ -3,3 +3,4 @@ a:hover { color: #922b21; }
 .headshot { display: block; margin: 0 auto 1rem; border-radius: 50%; }
 .profile { text-align: center; }
 .slide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+.quarto-title h1.title { text-align: center; }

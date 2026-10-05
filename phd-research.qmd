@@ -1,0 +1,44 @@
+---
+title: "PhD Research"
+---
+
+<video controls muted playsinline style="display:block; margin:0 auto; max-width:100%;" src="images/Presentation1.mp4"></video>
+
+Melanocytes develop from multipotent neural crest cells which, via multiple state transitions, eventually give rise to a mature melanocyte that imparts its function of photoprotection to the skin and the hair follicle. There are broadly two kinds of transitions: developmental context and functional (homeostatic) context. My work involves understanding both these transitions in detail.
+
+## Unravelling Melanocyte Heterogeneity using Single Cell Methodologies
+
+Melanocytes respond to UV radiation by producing melanin, initially promoting cell survival through increased proliferation and later transferring melanin to neighboring keratinocytes for protection. To understand if the same cells activate these divergent programs of pigmentation and proliferation, and if the extent of activation varies within the melanocyte population, we employ single-cell techniques, including sequencing and imaging. By correlating gene expression patterns with phenotypic changes, we aim to uncover the mechanisms underlying the melanocyte's dual response. This research may lead to new insights into skin protection strategies against UV-induced damage and skin cancer. [The manuscript is on bioRxiv and is currently in communication.](https://doi.org/10.1101/2023.05.10.540111)
+
+[Read the thread on Twitter](https://twitter.com/AggarwalAyush_/status/1656365902831706112)
+
+::: {.slide-grid}
+![](images/mcs/Slide1.jpg)
+![](images/mcs/Slide2.jpg)
+![](images/mcs/Slide3.jpg)
+![](images/mcs/Slide4.jpg)
+![](images/mcs/Slide5.jpg)
+![](images/mcs/Slide6.jpg)
+![](images/mcs/Slide7.jpg)
+![](images/mcs/Slide8.jpg)
+![](images/mcs/Slide9.jpg)
+![](images/mcs/Slide10.jpg)
+![](images/mcs/Slide11.jpg)
+![](images/mcs/Slide12.jpg)
+:::
+
+## Identification of Novel Regulators of Melanocyte Development using a Data Driven Approach
+
+Melanocytes derive from multipotent neural crest cells through a sox10+ progenitor, which can differentiate into various cell types, including melanocytes. Understanding the specific gene network directing sox10+ cells towards the melanocyte fate is crucial. Although some genes are known to bias the multipotent progenitor towards the melanocyte lineage, there is still vast potential for identifying novel regulators. I leverage multiple publicly available datasets that capture melanocyte development to identify these regulators. The manuscript for this part is currently under preparation.
+
+::: {.slide-grid}
+![](images/MelDev1.jpg)
+
+![](images/MelDev2.jpg)
+:::
+
+## Introducing [MelDat](https://ayushagg.shinyapps.io/MelDat/): A Web-Based Application for Exploring Melanocyte Datasets
+
+I developed an R Shiny application that provides a user-friendly platform for exploring multiple melanocyte-related datasets. Originally conceived as a resource for our laboratory, it initially contained datasets generated within our group. Eventually I expanded it to include other publicly available datasets, and plan to keep adding more. MelDat also lets you explore your own RNA sequencing or microarray datasets, generating high-quality figures suitable for publication.
+
+![](images/meldat.png)

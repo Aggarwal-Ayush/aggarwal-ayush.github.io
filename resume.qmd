@@ -1,0 +1,11 @@
+---
+title: "Resume"
+aliases:
+  - cv.html
+---
+
+[Download the PDF](AyushAggarwal_Resume.pdf){.btn .btn-outline-primary}
+
+<object data="AyushAggarwal_Resume.pdf" type="application/pdf" width="100%" height="1000">
+<p>Your browser can't display PDFs inline. <a href="AyushAggarwal_Resume.pdf">Download the resume</a> instead.</p>
+</object>

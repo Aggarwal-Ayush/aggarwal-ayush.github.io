@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+
+website:
+  title: "Ayush Aggarwal"
+  page-footer:
+    left: "© Ayush Aggarwal"
+    right: "Built with [Quarto](https://quarto.org/)"
+  navbar:
+    background: light
+    search: false
+    pinned: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Data Portfolio"
+        href: data-portfolio.qmd
+      - text: "Postdoctoral Research"
+        href: postdoctoral-research.qmd
+      - text: "PhD Research"
+        href: phd-research.qmd
+      - text: "Resume"
+        href: resume.qmd
+    right:
+      - icon: envelope
+        href: mailto:ayush.ucsf@gmail.com
+      - icon: github
+        href: https://github.com/Aggarwal-Ayush
+      - icon: linkedin
+        href: https://www.linkedin.com/in/ayush-aggarwal-39b9997b/
+      - icon: twitter
+        href: https://twitter.com/AggarwalAyush_
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    link-external-newwindow: true
+
+bibliography: publications.bib
+csl: apa-by-date.csl
+filters:
+  - bold-author.lua

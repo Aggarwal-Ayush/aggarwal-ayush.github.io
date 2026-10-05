@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Download the PDF\n\n\nYour browser can’t display PDFs inline. Download the resume instead."
+  },
+  {
+    "objectID": "phd-research.html",
+    "href": "phd-research.html",
+    "title": "PhD Research",
+    "section": "",
+    "text": "Melanocytes develop from multipotent neural crest cells which, via multiple state transitions, eventually give rise to a mature melanocyte that imparts its function of photoprotection to the skin and the hair follicle. There are broadly two kinds of transitions: developmental context and functional (homeostatic) context. My work involves understanding both these transitions in detail."
+  },
+  {
+    "objectID": "phd-research.html#unravelling-melanocyte-heterogeneity-using-single-cell-methodologies",
+    "href": "phd-research.html#unravelling-melanocyte-heterogeneity-using-single-cell-methodologies",
+    "title": "PhD Research",
+    "section": "Unravelling Melanocyte Heterogeneity using Single Cell Methodologies",
+    "text": "Unravelling Melanocyte Heterogeneity using Single Cell Methodologies\nMelanocytes respond to UV radiation by producing melanin, initially promoting cell survival through increased proliferation and later transferring melanin to neighboring keratinocytes for protection. To understand if the same cells activate these divergent programs of pigmentation and proliferation, and if the extent of activation varies within the melanocyte population, we employ single-cell techniques, including sequencing and imaging. By correlating gene expression patterns with phenotypic changes, we aim to uncover the mechanisms underlying the melanocyte’s dual response. This research may lead to new insights into skin protection strategies against UV-induced damage and skin cancer. The manuscript is on bioRxiv and is currently in communication.\nRead the thread on Twitter"
+  },
+  {
+    "objectID": "phd-research.html#identification-of-novel-regulators-of-melanocyte-development-using-a-data-driven-approach",
+    "href": "phd-research.html#identification-of-novel-regulators-of-melanocyte-development-using-a-data-driven-approach",
+    "title": "PhD Research",
+    "section": "Identification of Novel Regulators of Melanocyte Development using a Data Driven Approach",
+    "text": "Identification of Novel Regulators of Melanocyte Development using a Data Driven Approach\nMelanocytes derive from multipotent neural crest cells through a sox10+ progenitor, which can differentiate into various cell types, including melanocytes. Understanding the specific gene network directing sox10+ cells towards the melanocyte fate is crucial. Although some genes are known to bias the multipotent progenitor towards the melanocyte lineage, there is still vast potential for identifying novel regulators. I leverage multiple publicly available datasets that capture melanocyte development to identify these regulators. The manuscript for this part is currently under preparation."
+  },
+  {
+    "objectID": "phd-research.html#introducing-meldat-a-web-based-application-for-exploring-melanocyte-datasets",
+    "href": "phd-research.html#introducing-meldat-a-web-based-application-for-exploring-melanocyte-datasets",
+    "title": "PhD Research",
+    "section": "Introducing MelDat: A Web-Based Application for Exploring Melanocyte Datasets",
+    "text": "Introducing MelDat: A Web-Based Application for Exploring Melanocyte Datasets\nI developed an R Shiny application that provides a user-friendly platform for exploring multiple melanocyte-related datasets. Originally conceived as a resource for our laboratory, it initially contained datasets generated within our group. Eventually I expanded it to include other publicly available datasets, and plan to keep adding more. MelDat also lets you explore your own RNA sequencing or microarray datasets, generating high-quality figures suitable for publication."
+  },
+  {
+    "objectID": "data-portfolio.html",
+    "href": "data-portfolio.html",
+    "title": "Data Portfolio",
+    "section": "",
+    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat.\n\nMore projects coming soon."
+  },
+  {
+    "objectID": "data-portfolio.html#meldat",
+    "href": "data-portfolio.html#meldat",
+    "title": "Data Portfolio",
+    "section": "",
+    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat.\n\nMore projects coming soon."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ayush Aggarwal",
+    "section": "",
+    "text": "Postdoctoral Researcher\nUCSF\nPostdoctoral researcher in the field of cancer neuroscience working with Dr David R. Raleigh at UCSF, using big data to identify drivers of meningioma intra-tumor heterogeneity. Learn more.\nMy PhD at CSIR-IGIB, Delhi, India, focused on skin pigmentation and melanocyte biology, combining computational and experimental approaches to understand melanocyte cell state/lineage transitions. Learn more.\nSkilled in computational as well as experimental biology techniques.\nWant to see how your favourite gene behaves across multiple melanocyte developmental and functional states? Check out MelDat, a Shiny web application I developed to quickly explore melanocyte related (bulk and single-cell) datasets. You can even visualize your own RNA-seq or microarray datasets and create publication quality figures."
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Ayush Aggarwal",
+    "section": "Publications",
+    "text": "Publications\n\n\nAggarwal, A., Nasreen, A., Sahoo, S., Faruq, M., Pandey, R., Jolly, M. K., Singh, A., Gokhale, R. S., & Natarajan, V. T. (2023). Melanocytes exhibit distinct cell states governed by a gene regulatory network under stochastic influence. bioRxiv. https://doi.org/10.1101/2023.05.10.540111\n\n\nSubramaniam, Y., Sharma, B., Aggarwal, A., Raja, D. A., Gupta, I., Ghazi, M., Sivasubbu, S., & Natarajan, V. T. (2023). Migration and establishment of progenitor pool of melanocytes is governed by SEMA3E-PLXND1 signaling. bioRxiv. https://doi.org/10.1101/2023.02.28.530560\n\n\nSharma, B., Subramaniam, Y. J., Raja, D. A., Aggarwal, A., Sivasubbu, S., & Natarajan, V. T. (2022). Reverse genetic approach to identify regulators of pigmentation using zebrafish. Journal of Visualized Experiments, (e62955). https://doi.org/10.3791/62955\n\n\nSultan, F., Basu, R., Murthy, D., Kochar, M., Attri, K. S., Aggarwal, A., Kumari, P., Dnyane, P., Tanwar, J., Motiani, R. K., Singh, A., Gadgil, C., Bhavesh, N. S., Singh, P. K., Natarajan, V. T., & Gokhale, R. S. (2022). Temporal analysis of melanogenesis identifies fatty acid metabolism as key skin pigment regulator. PLoS Biology, 20(5), e3001634. https://doi.org/10.1371/journal.pbio.3001634\n\n\nDhawan, U. K., Bhattacharya, P., Narayanan, S., Manickam, V., Aggarwal, A., & Subramanian, M. (2021). Hypercholesterolemia impairs clearance of neutrophil extracellular traps and promotes inflammation and atherosclerotic plaque progression. Arteriosclerosis, Thrombosis, and Vascular Biology, 41, 2598–2615. https://doi.org/10.1161/ATVBAHA.120.316389\n\n\nOh, S., Abdelnabi, J., Al-Dulaimi, R., Aggarwal, A., Ramos, M., Davis, S., Riester, M., & Waldron, L. (2020). HGNChelper: Identification and correction of invalid gene symbols for human and mouse. F1000Research, 9, 1493. https://doi.org/10.12688/f1000research.28033.1\n\n\nRaja, D. A., Subramaniam, Y. J., Aggarwal, A., Gotherwal, V., Babu, A., Tanwar, J., Motiani, R. K., Sivasubbu, S., Gokhale, R. S., & Natarajan, V. T. (2020). Histone variant dictates fate biasing of neural crest cells to melanocyte lineage. Development, 147(5), dev182576. https://dev.biologists.org/content/147/5/dev182576.long\n\n\nGrover, R., Burse, S. A., Shankrit, S., Aggarwal, A., Kirty, K., Narta, K., Srivastav, R., Ray, A. K., Malik, G., Vats, A., Motiani, R. K., Thukral, L., Roy, S. S., Bhattacharya, S., Sharma, R., Natarajan, K., Mukerji, M., Pandey, R., Gokhale, R. S., & Natarajan, V. T. (2019). Myg1 exonuclease couples the nuclear and mitochondrial translational programs through RNA processing. Nucleic Acids Research, 47, 5852–5866. https://www.ncbi.nlm.nih.gov/pubmed/31081026"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Ayush Aggarwal",
+    "section": "Contact",
+    "text": "Contact\nThe Raleigh Laboratory\nUCSF Helen Diller Family Comprehensive Cancer Center, 1450 3rd Street, Mission Bay, San Francisco 94158"
+  },
+  {
+    "objectID": "postdoctoral-research.html",
+    "href": "postdoctoral-research.html",
+    "title": "Postdoctoral Research",
+    "section": "",
+    "text": "Postdoctoral researcher in the Raleigh Laboratory at UCSF, working in cancer neuroscience and using big data to identify drivers of meningioma intra-tumor heterogeneity.\nMore details coming soon."
+  }
+]

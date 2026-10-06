@@ -3,6 +3,8 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+  resources:
+    - images/Presentation1.mp4
 
 website:
   title: "Ayush Aggarwal"
@@ -41,6 +43,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+    fig-align: center
     link-external-newwindow: true
 
 bibliography: publications.bib

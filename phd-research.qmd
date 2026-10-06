@@ -2,7 +2,7 @@
 title: "PhD Research"
 ---
 
-<video controls muted playsinline style="display:block; margin:0 auto; max-width:100%;" src="images/Presentation1.mp4"></video>
+<video controls autoplay loop muted playsinline style="display:block; margin:0 auto; max-width:100%;" src="images/Presentation1.mp4"></video>
 
 Melanocytes develop from multipotent neural crest cells which, via multiple state transitions, eventually give rise to a mature melanocyte that imparts its function of photoprotection to the skin and the hair follicle. There are broadly two kinds of transitions: developmental context and functional (homeostatic) context. My work involves understanding both these transitions in detail.
 
@@ -14,16 +14,27 @@ Melanocytes respond to UV radiation by producing melanin, initially promoting ce
 
 ::: {.slide-grid}
 ![](images/mcs/Slide1.jpg)
+
 ![](images/mcs/Slide2.jpg)
+
 ![](images/mcs/Slide3.jpg)
+
 ![](images/mcs/Slide4.jpg)
+
 ![](images/mcs/Slide5.jpg)
+
 ![](images/mcs/Slide6.jpg)
+
 ![](images/mcs/Slide7.jpg)
+
 ![](images/mcs/Slide8.jpg)
+
 ![](images/mcs/Slide9.jpg)
+
 ![](images/mcs/Slide10.jpg)
+
 ![](images/mcs/Slide11.jpg)
+
 ![](images/mcs/Slide12.jpg)
 :::
 

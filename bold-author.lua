@@ -27,14 +27,11 @@ local function limit(div, n)
   return div
 end
 
--- `latest: N` in a page's front matter shows the N newest entries by date;
--- otherwise the full list is shown with first-author papers first.
+-- `latest: N` in a page's front matter keeps only the first N entries of the
+-- first-author-first ordering; otherwise the full list is shown.
 local function highlight(div, latest)
-  if latest then
-    div = limit(div, latest)
-  else
-    div = first_author_first(div)
-  end
+  div = first_author_first(div)
+  if latest then div = limit(div, latest) end
   return div:walk({
     Inlines = function(inlines)
       for i = 1, #inlines - 2 do

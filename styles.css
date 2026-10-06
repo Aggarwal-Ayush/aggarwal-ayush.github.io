@@ -2,6 +2,13 @@ a { color: #c0392b; }
 a:hover { color: #922b21; }
 .headshot { display: block; margin: 0 auto 1rem; border-radius: 50%; }
 .profile { text-align: center; }
-.slide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+.slide-grid { display: grid; justify-content: center; justify-items: center; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
 .quarto-title h1.title { text-align: center; }
 #refs .csl-entry { padding-left: 0; text-indent: 0; margin-bottom: 0.75rem; }
+
+/* Justified body text; the profile block stays centered */
+main.content p, main.content li, .csl-entry { text-align: justify; }
+main.content .profile p { text-align: center; }
+main.content img { max-width: 100%; }
+main.content p > img, main.content figure { display: block; margin-left: auto; margin-right: auto; }
+.slide-grid figure { margin: 0; }

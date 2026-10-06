@@ -3,6 +3,8 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+  resources:
+    - images/Presentation1.mp4
 
 website:
   title: "Ayush Aggarwal"
@@ -22,6 +24,8 @@ website:
         href: postdoctoral-research.qmd
       - text: "PhD Research"
         href: phd-research.qmd
+      - text: "Publications"
+        href: publications.qmd
       - text: "Resume"
         href: resume.qmd
     right:
@@ -39,6 +43,7 @@ format:
     theme: cosmo
     css: styles.css
     toc: false
+    fig-align: center
     link-external-newwindow: true
 
 bibliography: publications.bib

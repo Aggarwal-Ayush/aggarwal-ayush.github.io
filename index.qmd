@@ -2,6 +2,7 @@
 title: "Ayush Aggarwal"
 nocite: |
   @*
+latest: 5
 ---
 
 ::: profile
@@ -23,6 +24,8 @@ Want to see how your favourite gene behaves across multiple melanocyte developme
 
 ::: {#refs}
 :::
+
+[View all publications &rarr;](publications.qmd)
 
 ## Contact
 

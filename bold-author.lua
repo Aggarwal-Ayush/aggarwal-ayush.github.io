@@ -19,8 +19,19 @@ local function first_author_first(div)
   return div
 end
 
-local function highlight(div)
+-- Keep only the first n entries.
+local function limit(div, n)
+  local kept = {}
+  for i = 1, math.min(n, #div.content) do kept[i] = div.content[i] end
+  div.content = kept
+  return div
+end
+
+-- `latest: N` in a page's front matter keeps only the first N entries of the
+-- first-author-first ordering; otherwise the full list is shown.
+local function highlight(div, latest)
   div = first_author_first(div)
+  if latest then div = limit(div, latest) end
   return div:walk({
     Inlines = function(inlines)
       for i = 1, #inlines - 2 do
@@ -42,10 +53,11 @@ local function highlight(div)
 end
 
 function Pandoc(doc)
+  local latest = doc.meta.latest and tonumber(pandoc.utils.stringify(doc.meta.latest))
   doc = pandoc.utils.citeproc(doc)
   doc = doc:walk({
     Div = function(div)
-      if div.identifier == "refs" then return highlight(div) end
+      if div.identifier == "refs" then return highlight(div, latest) end
     end
   })
   -- citeproc has run; stop pandoc from running it a second time

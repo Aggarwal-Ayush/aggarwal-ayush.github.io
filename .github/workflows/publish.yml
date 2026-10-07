@@ -8,6 +8,11 @@ on:
 permissions:
   contents: write
 
+# Serialize publishes so an older, slower run can't overwrite a newer one.
+concurrency:
+  group: publish-site
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest

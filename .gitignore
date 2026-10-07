@@ -4,3 +4,6 @@ docs/
 *_files/
 
 /.quarto/
+.Rhistory
+
+**/*.quarto_ipynb

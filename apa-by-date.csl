@@ -1622,7 +1622,7 @@
   <macro name="source-serial">
     <group delimiter=". ">
       <group delimiter=", ">
-        <group delimiter=", " font-style="italic">
+        <group delimiter=", " font-weight="bold">
           <text text-case="title" variable="container-title"/>
           <!-- `collection-title` is for any serial with multiple series (e.g. 'second series') -->
           <text text-case="title" variable="collection-title"/>

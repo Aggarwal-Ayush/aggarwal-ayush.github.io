@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Portfolio – Ayush Aggarwal</title>
+<title>DNA Methylation Pipeline: Test Run Report – Ayush Aggarwal</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./data-portfolio.html" aria-current="page"> 
+    <a class="nav-link" href="./data-portfolio.html"> 
 <span class="menu-text">Data Portfolio</span></a>
   </li>  
   <li class="nav-item">
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Portfolio</h1>
+<h1 class="title">DNA Methylation Pipeline: Test Run Report</h1>
 </div>
 
 
@@ -173,22 +173,197 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="meldat" class="level2">
-<h2 class="anchored" data-anchor-id="meldat">MelDat</h2>
-<p>An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. <a href="https://ayushagg.shinyapps.io/MelDat/">Launch MelDat</a>.</p>
-<p><img src="images/meldat.png" class="img-fluid"></p>
+<p>A short report from running the <a href="https://github.com/Aggarwal-Ayush/dna-methylation-analysis">DNA methylation pipeline</a> on a small test set of public Illumina 450K arrays (four samples: two labelled Meningioma and two Dura). All sections below are generated directly from the pipeline’s output files.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This report summarises a run of the DNA methylation pipeline (test) on a small set of public Illumina 450K arrays. The pipeline processes IDATs with sesame, runs QC, calls copy-number alterations with conumee2, classifies samples, and finds differentially methylated regions with DMRcate.</p>
 </section>
-<section id="dna-methylation-analysis-pipeline" class="level2">
-<h2 class="anchored" data-anchor-id="dna-methylation-analysis-pipeline">DNA methylation analysis pipeline</h2>
-<p>An end-to-end, reproducible R pipeline (built with <code>targets</code>) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:</p>
-<ul>
-<li><strong>Preprocessing and QC:</strong> sesame processing, detection p-value filtering, sex-mismatch and SNP-probe checks.</li>
-<li><strong>Copy-number alterations:</strong> conumee2 segmentation and summary plots.</li>
-<li><strong>Classification:</strong> SVM-based methylation classifier.</li>
-<li><strong>Differential methylation:</strong> DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.</li>
-</ul>
-<p><a href="./dnam-pipeline-report.html">Read the full report on a test dataset</a> | <a href="https://github.com/Aggarwal-Ayush/dna-methylation-analysis">Source code</a></p>
-<p><em>More projects coming soon.</em></p>
+<section id="sample-qc" class="level2">
+<h2 class="anchored" data-anchor-id="sample-qc">Sample QC</h2>
+<p>4 samples were processed. Flagged samples are marked in the table.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 24%">
+<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sample_ID</th>
+<th style="text-align: right;">frac_dt_mk</th>
+<th style="text-align: right;">mean_intensity_MU</th>
+<th style="text-align: right;">RGdistort</th>
+<th style="text-align: left;">any_flag</th>
+<th style="text-align: left;">flag_reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">GSM5380774</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6792.606</td>
+<td style="text-align: right;">1.099</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">sex_mismatch</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GSM5380775</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9496.845</td>
+<td style="text-align: right;">1.083</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;">sex_mismatch</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GSM5380776</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10951.251</td>
+<td style="text-align: right;">1.101</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GSM5380777</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12818.100</td>
+<td style="text-align: right;">1.097</td>
+<td style="text-align: left;">FALSE</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<section id="snp-probe-heatmap" class="level3">
+<h3 class="anchored" data-anchor-id="snp-probe-heatmap">SNP-probe heatmap</h3>
+<p>Samples from the same individual should cluster together.</p>
+<p><img src="images/dnam-report/snp-heatmap-1.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="beta-value-distributions-and-mds" class="level2">
+<h2 class="anchored" data-anchor-id="beta-value-distributions-and-mds">Beta-value distributions and MDS</h2>
+<p>Density plots (by group and by sample) and an MDS plot of the cleaned beta values after detection p-value, SNP, cross-hybridising and replicate-probe filtering.</p>
+<p><img src="images/dnam-report/density-mds-1.png" class="img-fluid"></p>
+<p><img src="images/dnam-report/density-mds-2.png" class="img-fluid"></p>
+</section>
+<section id="copy-number-alterations" class="level2">
+<h2 class="anchored" data-anchor-id="copy-number-alterations">Copy-number alterations</h2>
+<p><img src="images/dnam-report/cna-summary-1.png" class="img-fluid"></p>
+<p>Number of CNA segments per sample:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sample</th>
+<th style="text-align: right;">Freq</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">GSM5380774</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GSM5380775</td>
+<td style="text-align: right;">22</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GSM5380776</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GSM5380777</td>
+<td style="text-align: right;">22</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="methylation-classifier" class="level2">
+<h2 class="anchored" data-anchor-id="methylation-classifier">Methylation classifier</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Sample_ID</th>
+<th style="text-align: left;">DNA_methylation_group</th>
+<th style="text-align: left;">DNA_methylation_subgroup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">GSM5380775</td>
+<td style="text-align: left;">Immune-enriched</td>
+<td style="text-align: left;">Immune-enriched</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GSM5380777</td>
+<td style="text-align: left;">Merlin-intact</td>
+<td style="text-align: left;">Merlin-intact</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">GSM5380774</td>
+<td style="text-align: left;">Immune-enriched</td>
+<td style="text-align: left;">Immune-enriched</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GSM5380776</td>
+<td style="text-align: left;">Immune-enriched</td>
+<td style="text-align: left;">Immune-enriched</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="differentially-methylated-regions-dmrcate" class="level2">
+<h2 class="anchored" data-anchor-id="differentially-methylated-regions-dmrcate">Differentially methylated regions (DMRcate)</h2>
+<p>1 DMRs were called. Top 1 by minimum smoothed FDR:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">contrast</th>
+<th style="text-align: left;">seqnames</th>
+<th style="text-align: right;">start</th>
+<th style="text-align: right;">end</th>
+<th style="text-align: right;">width</th>
+<th style="text-align: right;">no.cpgs</th>
+<th style="text-align: right;">min_smoothed_fdr</th>
+<th style="text-align: right;">meandiff</th>
+<th style="text-align: left;">overlapping.genes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Meningioma_vs_Dura</td>
+<td style="text-align: left;">chr8</td>
+<td style="text-align: right;">22102556</td>
+<td style="text-align: right;">22102902</td>
+<td style="text-align: right;">347</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">-0.124</td>
+<td style="text-align: left;">POLR3D, MIR320A</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/dnam-report/dmr-top-1.png" class="img-fluid"></p>
+</section>
+<section id="differential-methylation-heatmaps" class="level2">
+<h2 class="anchored" data-anchor-id="differential-methylation-heatmaps">Differential methylation heatmaps</h2>
+<p>Beta values for the top probes per condition, probes with P &lt;= 0.05 and probes with adjusted P &lt;= 0.05. Columns are annotated by condition and rows by the condition with higher methylation.</p>
+<p><img src="images/dnam-report/diff-heatmap-1.png" class="img-fluid"></p>
+<p><img src="images/dnam-report/diff-heatmap-2.png" class="img-fluid"></p>
+<p><img src="images/dnam-report/diff-heatmap-3.png" class="img-fluid"></p>
+<p><em>Generated from pipeline outputs on 2026-10-07.</em></p>
+<p><a href="./data-portfolio.html">Back to Data Portfolio</a></p>
 
 
 </section>

@@ -39,14 +39,77 @@
     "href": "data-portfolio.html",
     "title": "Data Portfolio",
     "section": "",
-    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat.\n\nMore projects coming soon."
+    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat."
   },
   {
     "objectID": "data-portfolio.html#meldat",
     "href": "data-portfolio.html#meldat",
     "title": "Data Portfolio",
     "section": "",
-    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat.\n\nMore projects coming soon."
+    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat."
+  },
+  {
+    "objectID": "data-portfolio.html#dna-methylation-analysis-pipeline",
+    "href": "data-portfolio.html#dna-methylation-analysis-pipeline",
+    "title": "Data Portfolio",
+    "section": "DNA methylation analysis pipeline",
+    "text": "DNA methylation analysis pipeline\nAn end-to-end, reproducible R pipeline (built with targets) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:\n\nPreprocessing and QC: sesame processing, detection p-value filtering, sex-mismatch and SNP-probe checks.\nCopy-number alterations: conumee2 segmentation and summary plots.\nClassification: SVM-based methylation classifier.\nDifferential methylation: DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.\n\nRead the full report on a test dataset | Source code\nMore projects coming soon."
+  },
+  {
+    "objectID": "dnam-pipeline-report.html",
+    "href": "dnam-pipeline-report.html",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "",
+    "text": "A short report from running the DNA methylation pipeline on a small test set of public Illumina 450K arrays (four samples: two labelled Meningioma and two Dura). All sections below are generated directly from the pipeline’s output files."
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#overview",
+    "href": "dnam-pipeline-report.html#overview",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Overview",
+    "text": "Overview\nThis report summarises a run of the DNA methylation pipeline (test) on a small set of public Illumina 450K arrays. The pipeline processes IDATs with sesame, runs QC, calls copy-number alterations with conumee2, classifies samples, and finds differentially methylated regions with DMRcate."
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#sample-qc",
+    "href": "dnam-pipeline-report.html#sample-qc",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Sample QC",
+    "text": "Sample QC\n4 samples were processed. Flagged samples are marked in the table.\n\n\n\n\n\n\n\n\n\n\n\nSample_ID\nfrac_dt_mk\nmean_intensity_MU\nRGdistort\nany_flag\nflag_reason\n\n\n\n\nGSM5380774\n1\n6792.606\n1.099\nFALSE\nsex_mismatch\n\n\nGSM5380775\n1\n9496.845\n1.083\nFALSE\nsex_mismatch\n\n\nGSM5380776\n1\n10951.251\n1.101\nFALSE\n\n\n\nGSM5380777\n1\n12818.100\n1.097\nFALSE\n\n\n\n\n\nSNP-probe heatmap\nSamples from the same individual should cluster together."
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#beta-value-distributions-and-mds",
+    "href": "dnam-pipeline-report.html#beta-value-distributions-and-mds",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Beta-value distributions and MDS",
+    "text": "Beta-value distributions and MDS\nDensity plots (by group and by sample) and an MDS plot of the cleaned beta values after detection p-value, SNP, cross-hybridising and replicate-probe filtering."
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#copy-number-alterations",
+    "href": "dnam-pipeline-report.html#copy-number-alterations",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Copy-number alterations",
+    "text": "Copy-number alterations\n\nNumber of CNA segments per sample:\n\n\n\nSample\nFreq\n\n\n\n\nGSM5380774\n22\n\n\nGSM5380775\n22\n\n\nGSM5380776\n23\n\n\nGSM5380777\n22"
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#methylation-classifier",
+    "href": "dnam-pipeline-report.html#methylation-classifier",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Methylation classifier",
+    "text": "Methylation classifier\n\n\n\nSample_ID\nDNA_methylation_group\nDNA_methylation_subgroup\n\n\n\n\nGSM5380775\nImmune-enriched\nImmune-enriched\n\n\nGSM5380777\nMerlin-intact\nMerlin-intact\n\n\nGSM5380774\nImmune-enriched\nImmune-enriched\n\n\nGSM5380776\nImmune-enriched\nImmune-enriched"
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#differentially-methylated-regions-dmrcate",
+    "href": "dnam-pipeline-report.html#differentially-methylated-regions-dmrcate",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Differentially methylated regions (DMRcate)",
+    "text": "Differentially methylated regions (DMRcate)\n1 DMRs were called. Top 1 by minimum smoothed FDR:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncontrast\nseqnames\nstart\nend\nwidth\nno.cpgs\nmin_smoothed_fdr\nmeandiff\noverlapping.genes\n\n\n\n\nMeningioma_vs_Dura\nchr8\n22102556\n22102902\n347\n8\n0\n-0.124\nPOLR3D, MIR320A"
+  },
+  {
+    "objectID": "dnam-pipeline-report.html#differential-methylation-heatmaps",
+    "href": "dnam-pipeline-report.html#differential-methylation-heatmaps",
+    "title": "DNA Methylation Pipeline: Test Run Report",
+    "section": "Differential methylation heatmaps",
+    "text": "Differential methylation heatmaps\nBeta values for the top probes per condition, probes with P &lt;= 0.05 and probes with adjusted P &lt;= 0.05. Columns are annotated by condition and rows by the condition with higher methylation.\n\n\n\nGenerated from pipeline outputs on 2026-10-07.\nBack to Data Portfolio"
   },
   {
     "objectID": "phd-research.html",

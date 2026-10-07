@@ -2,12 +2,6 @@
 title: "Data Portfolio"
 ---
 
-## MelDat
-
-An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. [Launch MelDat](https://ayushagg.shinyapps.io/MelDat/).
-
-![](images/meldat.png)
-
 ## DNA methylation analysis pipeline
 
 An end-to-end, reproducible R pipeline (built with `targets`) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:
@@ -18,5 +12,11 @@ An end-to-end, reproducible R pipeline (built with `targets`) for Illumina 450K,
 - **Differential methylation:** DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.
 
 [Read the full report on a test dataset](dnam-pipeline-report.qmd) | [Source code](https://github.com/Aggarwal-Ayush/dna-methylation-analysis)
+
+## MelDat
+
+An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. [Launch MelDat](https://ayushagg.shinyapps.io/MelDat/).
+
+![](images/meldat.png)
 
 *More projects coming soon.*

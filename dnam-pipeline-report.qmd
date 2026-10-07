@@ -1,0 +1,9 @@
+---
+title: "DNA Methylation Pipeline: Test Run Report"
+---
+
+A short report from running the [DNA methylation pipeline](https://github.com/Aggarwal-Ayush/dna-methylation-analysis) on a small test set of public Illumina 450K arrays (four samples: two labelled Meningioma and two Dura). All sections below are generated directly from the pipeline's output files.
+
+{{< include _dnam-report-results.md >}}
+
+[Back to Data Portfolio](data-portfolio.qmd)

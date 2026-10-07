@@ -8,4 +8,15 @@ An R Shiny application for exploring melanocyte-related (bulk and single-cell) d
 
 ![](images/meldat.png)
 
+## DNA methylation analysis pipeline
+
+An end-to-end, reproducible R pipeline (built with `targets`) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:
+
+- **Preprocessing and QC:** sesame processing, detection p-value filtering, sex-mismatch and SNP-probe checks.
+- **Copy-number alterations:** conumee2 segmentation and summary plots.
+- **Classification:** SVM-based methylation classifier.
+- **Differential methylation:** DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.
+
+[Read the full report on a test dataset](dnam-pipeline-report.qmd) | [Source code](https://github.com/Aggarwal-Ayush/dna-methylation-analysis)
+
 *More projects coming soon.*

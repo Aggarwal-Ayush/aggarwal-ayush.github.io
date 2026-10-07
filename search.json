@@ -39,21 +39,21 @@
     "href": "data-portfolio.html",
     "title": "Data Portfolio",
     "section": "",
-    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat."
-  },
-  {
-    "objectID": "data-portfolio.html#meldat",
-    "href": "data-portfolio.html#meldat",
-    "title": "Data Portfolio",
-    "section": "",
-    "text": "An R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat."
+    "text": "An end-to-end, reproducible R pipeline (built with targets) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:\n\nPreprocessing and QC: sesame processing, detection p-value filtering, sex-mismatch and SNP-probe checks.\nCopy-number alterations: conumee2 segmentation and summary plots.\nClassification: SVM-based methylation classifier.\nDifferential methylation: DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.\n\nRead the full report on a test dataset | Source code"
   },
   {
     "objectID": "data-portfolio.html#dna-methylation-analysis-pipeline",
     "href": "data-portfolio.html#dna-methylation-analysis-pipeline",
     "title": "Data Portfolio",
-    "section": "DNA methylation analysis pipeline",
-    "text": "DNA methylation analysis pipeline\nAn end-to-end, reproducible R pipeline (built with targets) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:\n\nPreprocessing and QC: sesame processing, detection p-value filtering, sex-mismatch and SNP-probe checks.\nCopy-number alterations: conumee2 segmentation and summary plots.\nClassification: SVM-based methylation classifier.\nDifferential methylation: DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.\n\nRead the full report on a test dataset | Source code\nMore projects coming soon."
+    "section": "",
+    "text": "An end-to-end, reproducible R pipeline (built with targets) for Illumina 450K, EPIC and EPICv2 methylation arrays. It goes from raw IDATs to QC, copy-number calling, methylation-based classification and differential methylation:\n\nPreprocessing and QC: sesame processing, detection p-value filtering, sex-mismatch and SNP-probe checks.\nCopy-number alterations: conumee2 segmentation and summary plots.\nClassification: SVM-based methylation classifier.\nDifferential methylation: DMRcate region calling plus ComplexHeatmap summaries of differentially methylated probes.\n\nRead the full report on a test dataset | Source code"
+  },
+  {
+    "objectID": "data-portfolio.html#meldat",
+    "href": "data-portfolio.html#meldat",
+    "title": "Data Portfolio",
+    "section": "MelDat",
+    "text": "MelDat\nAn R Shiny application for exploring melanocyte-related (bulk and single-cell) datasets, including your own RNA-seq or microarray data. Launch MelDat.\n\nMore projects coming soon."
   },
   {
     "objectID": "dnam-pipeline-report.html",
